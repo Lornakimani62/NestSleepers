@@ -21,9 +21,8 @@ def review():
     try:
 
         name = request.form['name']
-        email = request.form['email']
         review = request.form['review']
-        post = Reviews(name=name,email=email,review=review)
+        post = Reviews(name=name,review=review)
         db.session.add(post)
         db.session.commit()
 

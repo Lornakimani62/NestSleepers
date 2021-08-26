@@ -1654,11 +1654,9 @@ function submitReview(){
     console.log("Entry")
     fname = document.getElementById("name").value;
     email = document.getElementById("email").value;
-    review = document.getElementById("review").value;
 $.post('/review', {
     name:fname,
     email:email,
-    review:review,
 }).done(function (response) {
     console.log(response)
     if(response === "Completed"){

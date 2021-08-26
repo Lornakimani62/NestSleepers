@@ -24,8 +24,8 @@ def send_email(config_class=Config):
                 MAIL_PORT = 587,
                 MAIL_USE_TLS = True,
                 MAIL_USE_SSL = False,
-                MAIL_USERNAME = 'lornakimani95@gmail.com',
-                MAIL_PASSWORD = 'Lk@0724276722',
+                MAIL_USERNAME = 'nestsleepers75@gmail.com',
+                MAIL_PASSWORD = '060412Jey!',
             ))
             mail = Mail(app)
             sms = request.form['message']
@@ -33,7 +33,7 @@ def send_email(config_class=Config):
             sender = request.form['name']
             phone = request.form['phone']
             email = request.form['email']
-            msg = Message(subject=subject, sender = 'Nest Sleepers Website', recipients = ['lorna.kimani@strathmore.edu'])
+            msg = Message(subject=subject, sender = 'Nest Sleepers Website', recipients = ['nestsleepers@gmail.com'])
 
             msg.html = render_template('emails.html', sms=sms,subject=subject,sender=sender,phone=phone,email=email)
 
