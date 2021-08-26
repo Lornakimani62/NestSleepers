@@ -1,0 +1,515 @@
+{%extends "base.html" %}
+{% block content %}
+<!-- hero-wrap  -->
+<div class="hero-wrap fl-wrap full-height scroll-con-sec">
+	<!--fs-slider-wrap -->
+	<div class="fs-slider_align_title">
+		<h2><a href="" class="ajax">Nest Sleepers<br><span> Comfort Over The Road</span></a></h2>
+		<p>Nest Sleepers fills the comfort gap in trucks and provides additional features that make the trucks safer and
+			more economical. </p>
+		<div class="clearfix"></div>
+		<a href="#sec1" class="hero_btn custom-scroll-link">Read More About Us</a>
+	</div>
+	<!--fs-slider-wrap end -->
+	<!-- hero-slider_details_wrap-->
+	<div class="fwc-dec fwc-dec_top"></div>
+	<div class="fwc-dec fwc-dec_right"></div>
+	<div class="bg" data-bg="../static/images/bg/bg2.jpeg"></div>
+	<div class="overlay"></div>
+	<!--hero_promo-wrap-->
+	<div class="hero_promo-wrap">
+		<div class="hero_promo-title">
+			<h4>Play Video in HD</h4>
+		</div>
+		<div class="hero_promo-button" id="html5-videos" data-html="#video1">
+			<div class="bg" data-bg="../static/images/bg/bg.jpeg"></div>
+			<div class="overlay"></div>
+			<a href="#"><i class="fas fa-play"></i></a>
+		</div>
+	</div>
+	<!-- Hidden video div -->
+	<div style="display:none;" id="video1">
+		<video class="lg-video-object lg-html5" controls preload="none">
+			<source src="../static/video/3.mp4" type="video/mp4">
+		</video>
+	</div>
+	<!--hero_promo-wrap end-->
+	<!--hero dec-->
+	<div class="hero-decor-let">
+		<div>Sleeper Installation</div>
+		<div><span>Diesel Heaters</span></div>
+		<div>AC System Installation</div>
+		<div><span>Trailer Repair</span></div>
+	</div>
+	<a href="#sec1" class="custom-scroll-link start-btn start-btn_2"><span> Start explore </span><i
+			class="fal fa-long-arrow-down"></i></a>
+	<div class="video-single-wrapper_dec vswd_2"></div>
+</div>
+<!-- hero-wrap  end-->
+<!-- content-->
+<div class="content">
+	<!--fixed-column-wrap-->
+	<div class="fixed-column-wrap init_fx-column fcw_mob-hidden">
+		<!--fixed-column-wrap-content-->
+		<div class="fixed-column-wrap-content">
+			<div class="fixed-column-wrap_bg">
+				<div class="bg bg-scroll"></div>
+				<div class="overlay"></div>
+				<div class="column-image-anim"></div>
+				<div class="hero-scroll-down-notifer  ">
+					<div class="scroll-down-wrap ">
+						<div class="mousey">
+							<div class="scroller"></div>
+						</div>
+					</div>
+				</div>
+				<div class="fixed-column-dec"></div>
+			</div>
+			<!--fixed-column-wrap_title-->
+			<div class="fixed-column-wrap_title">
+				<h2><span>01. About Us</span></h2>
+			</div>
+			<!--fixed-column-wrap_title end-->
+			<div class="scroll-notifer">Scroll Down </div>
+			<div class="fwc-dec fwc-dec_top"></div>
+			<div class="fwc-dec fwc-dec_right"></div>
+			<div class="fixed-column-wrap_dec"></div>
+		</div>
+		<!--fixed-column-wrap-content end-->
+	</div>
+	<!--fixed-column-wrap end-->
+	<!--column-wrap-->
+	<div class="column-wrap">
+		<!--column-wrap-container -->
+		<div class="column-wrap-container white-bg fl-wrap">
+			<div class="col-wc_dec"></div>
+			<!--section-->
+			<section id="sec1" class="scroll-con-sec">
+				<div class="container">
+					<div class="section-title fl-wrap">
+						<h2>About Our <strong> Company</strong></h2>
+						<p>Nest Sleepers came to be after the proprietor saw a need to provide comfort for Over-the-Road
+							(OTR) drivers.
+						</p>
+						<div class="sec-title_dec"></div>
+					</div>
+					<div class="row">
+						<div class="col-md-5">
+							<div class="about-img fl-wrap">
+								<img src="../static/images/about.jpeg" class="respimg" alt="">
+							</div>
+						</div>
+						<div class="col-md-7">
+							<div class="text-block fl-wrap">
+								<h4 class="text-block_subtitle">Customer Centric<br> Services</h4>
+								<p> Despite truck manufacturers installing resting places for drivers, the amount of
+									comfort achieved is substantial, resulting in poorly rested drivers on the road.
+									Nest Sleepers fills the comfort gap in trucks and provides additional features that
+									make the trucks safer and more economical.
+									Nest Sleepers takes pride in being a unique auto service company from various
+									perspectives. The team of mechanics employs ethical values when offering their
+									services. <br>The team does not compromise on quality when providing services. We
+									take note of the client’s preferences and needs, hence the company’s ability to
+									deliver tailor-made services.
+									Nest Sleepers has been operational since 2018, and it has had the privilege of
+									working on small, medium, and large-sized trucks. The services delivered are nothing
+									short of excellence. We assure the clients that the charges for the service they
+									receive will be cost-friendly.</p>
+								<a href="#sec2" class="btn float-btn custom-scroll-link">Our Works</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section-number">
+					<span>0</span>1<strong>.</strong>
+				</div>
+			</section>
+			<!--section end-->
+			<!-- section  -->
+			<section class="dark-bg sec-car scroll-con-sec" id="sec2">
+				<div class="fet_pr-carousel_title fl-wrap">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8">
+								<h2> Featured <strong>Projects</strong></h2>
+								<p>We do not compromise on quality when providing services. Check out some of our
+									awesome projects</p>
+							</div>
+							<div class="col-md-4">
+								<a href="{{ url_for('portfolio.view_all_projects') }}"
+									class="ajax   fet_pr-carousel_link btn">View all Cases</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--grid-carousel-wrap -->
+				<div class="grid-carousel-wrap fl-wrap">
+					<div class="grid-carousel fl-wrap">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<!-- fet_pr-carousel-box  -->
+								<div class="swiper-slide">
+									<div class="fet_pr-carousel-box">
+										<div class="fet_pr-carousel-box-media fl-wrap">
+											<div class="bg par-elem" data-bg="../static/images/folio/3.jpg"
+												data-swiper-parallax="10%"></div>
+											<div class="overlay"></div>
+											<div class="grid-det_num">01.</div>
+										</div>
+										<div class="fet_pr-carousel-box-text fl-wrap">
+											<a href="#">Dallas Tx</a>
+										</div>
+									</div>
+								</div>
+								<!-- fet_pr-carousel-box end -->
+								<!-- fet_pr-carousel-box  -->
+								<div class="swiper-slide">
+									<div class="fet_pr-carousel-box">
+										<div class="fet_pr-carousel-box-media fl-wrap">
+											<div class="bg par-elem" data-bg="../static/images/folio/15.jpg"
+												data-swiper-parallax="10%"></div>
+											<div class="overlay"></div>
+											<div class="grid-det_num">02.</div>
+										</div>
+										<div class="fet_pr-carousel-box-text fl-wrap">
+											<a href="#">Dallas Tx</a>
+										</div>
+									</div>
+								</div>
+								<!-- fet_pr-carousel-box end -->
+								<!-- fet_pr-carousel-box  -->
+								<div class="swiper-slide">
+									<div class="fet_pr-carousel-box">
+										<div class="fet_pr-carousel-box-media fl-wrap">
+											<div class="bg par-elem" data-bg="../static/images/folio/5.jpg"
+												data-swiper-parallax="10%"></div>
+											<div class="overlay"></div>
+											<div class="grid-det_num">03.</div>
+										</div>
+										<div class="fet_pr-carousel-box-text fl-wrap">
+											<a href="#">Dallas Tx</a>
+										</div>
+									</div>
+								</div>
+								<!-- fet_pr-carousel-box end -->
+								<!-- fet_pr-carousel-box  -->
+								<div class="swiper-slide">
+									<div class="fet_pr-carousel-box">
+										<div class="fet_pr-carousel-box-media fl-wrap">
+											<div class="bg par-elem" data-bg="../static/images/folio/51.jpg"
+												data-swiper-parallax="10%"></div>
+											<div class="overlay"></div>
+											<div class="grid-det_num">04.</div>
+										</div>
+										<div class="fet_pr-carousel-box-text fl-wrap">
+											<a href="#">Dallas Tx</a>
+										</div>
+									</div>
+								</div>
+								<!-- fet_pr-carousel-box end -->
+							</div>
+						</div>
+					</div>
+					<div class="grid-carousel_pagination"></div>
+					<div class="gc-slider-cont gc-slider-cont-next"><i class="fal fa-angle-right"></i></div>
+					<div class="gc-slider-cont gc-slider-cont-prev"><i class="fal fa-angle-left"></i></div>
+				</div>
+				<!--grid-carousel-wrap end -->
+			</section>
+			<!-- section end-->
+			<!-- section  -->
+			<section class="scroll-con-sec gray-bg" id="sec3">
+				<div class="container">
+					<div class="section-title fl-wrap">
+						<h2>Services <strong> Provided</strong></h2>
+						<p>Our mission is to engineer customer-centric solutions that bring about safe, comfortable and
+							economical trucks on the roads.</p>
+						<div class="sec-title_dec"></div>
+					</div>
+					<div class="column-wrapper_text fl-wrap">
+						<!-- serv-wrap-->
+						<div class="serv-wrap fl-wrap">
+							<!-- serv-item -->
+							<div class="serv-item">
+								<div class="serv-media">
+									<div class="bg " data-bg="../static/images/bg/bg3.jpeg"></div>
+									<div class="team-info-num">01.</div>
+								</div>
+								<div class="serv-text">
+									<h4>Sleeper Installation</h4>
+									<p> A truck sleeper cab is the section of a truck directly behind the seating area
+										on the front cabin.
+										The truck sleeper cabs are meant to be used as sleeping and resting areas by the
+										driver.
+									</p>
+									<p>Nest sleepers understand the importance of good rest for the drivers,
+										which drives its desire to install comfortable and ergonomic sleeping and
+										resting quarters in commercial trucks.</p>
+									<p>Having sleeping and resting quarters in a truck helps the organization and driver
+										save some finances that would have been used to pay for motels and other resting
+										areas.</p>
+								</div>
+							</div>
+							<!-- serv-item end -->
+							<!-- serv-item -->
+							<div class="serv-item serv-item-right">
+								<div class="serv-media">
+									<div class="bg " data-bg="../static/images/folio/3.jpg"></div>
+									<div class="team-info-num">02.</div>
+								</div>
+								<div class="serv-text">
+									<h4>Diesel Heaters</h4>
+									<p> Nest Sleepers installs, services, and repairs diesel heaters for commercial
+										trucks. Diesel heaters are essential components for OTR drivers.</p>
+									<p> They are used to generate consistent heat to a truck’s interior and eliminate
+										cold starting in engines. Elimination of cold starting adds up to the efficiency
+										of a truck while having consistency in the cabin’s temperature results in a more
+										comfortable experience. </p>
+									<p>Through installation, servicing, and repairing diesel heaters, Nest Sleepers is
+										able to realize its mission of ensuring that trucks are comfortable and
+										economical.</p>
+								</div>
+							</div>
+							<!-- serv-item end -->
+							<!-- serv-item -->
+							<div class="serv-item">
+								<div class="serv-media">
+									<div class="bg " data-bg="../static/images/bg/bg5.jpeg"></div>
+									<div class="team-info-num">03.</div>
+								</div>
+								<div class="serv-text">
+									<h4>Air Conditioning (AC) System Installation</h4>
+									<p>Nest Sleepers has specialized in installing, servicing, and repairing AC systems
+										of commercial trucks and cargo vans.</p>
+									<p> AC systems are essential elements in vehicles as they aid in achieving a
+										comfortable, fun, and safer driving experience</p>
+								</div>
+							</div>
+							<!-- serv-item end -->
+							<!-- serv-item -->
+							<div class="serv-item serv-item-right">
+								<div class="serv-media">
+									<div class="bg " data-bg="../static/images/bg/bg4.jpeg"></div>
+									<div class="team-info-num">04.</div>
+								</div>
+								<div class="serv-text">
+									<h4>Trailer Repair</h4>
+									<p>The road cargo transportation industry in the US relies heavily on the use of
+										trailers. Nest Sleepers offers customization and repair services for large and
+										small trailers.</p>
+									<p>Customization significantly helps in building a brand identity for an
+										organization in the transport industry, while repairs on trailers will ensure
+										that the roads are safer</p>
+
+								</div>
+							</div>
+							<!-- serv-item end -->
+							<!-- serv-item -->
+							<div class="serv-item">
+								<div class="serv-media">
+									<div class="bg " data-bg="../static/images/bg/bg1.jpeg"></div>
+									<div class="team-info-num">5.0</div>
+								</div>
+								<div class="serv-text">
+									<h4>Cargo Van Customization</h4>
+									<p>Nest Sleepers prides itself in delivering excellence in the customization of
+										cargo vans. Cargo vans are crucial for transportation companies as they are best
+										suited for minimal luggage over relatively short distances. </p>
+									<p>Customization of cargo vans brings about the creation of brand identity for
+										organizations in the transport industry. It also brings about economic value as
+										the cargo vans are designed to best suit the type of cargo transported.</p>
+								</div>
+							</div>
+							<!-- serv-item end -->
+						</div>
+						<!-- serv-wrap end -->
+						<p>We take every project as a unique one. We strive to understand the clients’ preferences by
+							capturing what they want and value. Through listening, we are able to understand the
+							client’s preferences from all angles.
+							The team will consider the client’s preferences and do a brilliant and thorough job of
+							realizing the client’s desires.</p>
+						<a href="{{ url_for('contact.contacts') }}" class="btn float-btn ajax  "><span>Get In
+								Touch</span></a>
+					</div>
+				</div>
+				<div class="section-number"> <span>0</span>2<strong>.</strong></div>
+			</section>
+			<!-- section end-->
+			<!-- section-->
+			<section class="dark-bg sec-car scroll-con-sec">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="video-promo-text fl-wrap mar-top">
+								<h3>Our Video <strong>Presentation</strong></h3>
+								<p>Check out this video of a project we did recently and visit out instagram page to
+									view more videos of the same installations</p>
+								<a href="https://www.instagram.com/nestsleepers/" class="btn float-btn"><span>Our
+										Instagram Page</span></a>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="video-box dec-img fl-wrap">
+								<img src="../static/images/bg/bg.jpeg" alt="" class="respimg">
+								<a class="video-box-btn image-popup" href="https://www.instagram.com/p/CFIyCB0H9uo/"><i
+										class="fas fa-play"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section  end-->
+			<!-- section  -->
+			<section class="scroll-con-sec" id="sec4">
+				<div class="container">
+					<div class="section-title fl-wrap">
+						<h2>Our Awesome <strong>Team</strong></h2>
+						<p>Nest Sleepers takes pride in being a unique auto service company from various perspectives.
+							The team of mechanics employs ethical values when offering their services. The team does not
+							compromise on quality when providing services</p>
+						<div class="sec-title_dec"></div>
+					</div>
+					<div class="row">
+						<!-- team-box   -->
+						<div class="col-md-8">
+							<div class="team-box">
+								<div class="team-photo">
+									<div class="overlay"></div>
+									<img src="../static/images/Team/1.jpeg" alt="" class="respimg">
+									<div class="team-info-num">01.</div>
+								</div>
+								<div class="team-info">
+									<h3>Joseph Ngugi</h3>
+									<h4>CEO / Chief Engineer</h4>
+									<p>Joesph Ngugi is an innovative entrepreneur based in the USA , He takes pride in
+										providing innovative and customized solutions for truck drivers. He is the CEO
+										and Chief Engineer at Nestsleepers where he has overseen over 100 projects to
+										complesion
+								</div>
+							</div>
+						</div>
+						<!-- team-box end -->
+					</div>
+				</div>
+				<div class="section-number"> <span>0</span>4<strong>.</strong></div>
+			</section>
+			<!-- section end-->
+			<div class="section-separator fl-wrap"><span></span></div>
+			<!--section  -->
+			<section class="scroll-con-sec gray-bg " id="sec5">
+				<div class="container">
+					<div class="section-title fl-wrap">
+						<h2>Client Testimonials </h2>
+						<p>We take pride in the services we offer our clients and we have been constantly recieveing
+							feedback that helps create a better experience for our clients</p>
+						<div class="sec-title_dec"></div>
+					</div>
+					<div class="testimonilas-carousel-wrap fl-wrap">
+						<div class="testimonilas-carousel">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<!--testi-item-->
+									{% for review in reviews %}  
+									<div class="swiper-slide">
+										<div class="testi-item fl-wrap">
+											<div class="testimonilas-text fl-wrap">
+												<h3>{{review.name}}</h3>
+												<h4>{{review.review}}</h4>
+												<span class="testi-number">0{{review.id}}.</span>
+											</div>
+										</div>
+									</div>
+									{% endfor %}
+									<!--testi-item end-->
+								</div>
+							</div>
+						</div>
+						<div class="tc-pagination"></div>
+						<div class="tc-button_wrap">
+							<div class="tc-button tc-button-prev"><i class="fal fa-angle-left"></i></div>
+							<div class="tc-button tc-button-next"><i class="fal fa-angle-right"></i></div>
+						</div>
+
+					</div>
+					
+					<div id="respond">
+					<!-- Success and error message -->
+					<div id='success_page' style="display: none;">
+						<h3>Review Sent Successfully.</h3>
+							<p>Thank you your review has been submitted to us.</p>
+							</div>
+							<div id='error_page' style="display: none;">
+							<h3>Error</h3>
+							<p>We experienced a problem sending your review. Kindly try again later.</p>
+							</div>
+						<div class="pr-subtitle no-top-mar"> Leave A Review</div>
+						<div class="section-separator fl-wrap sp2"><span></span></div>
+						<div id="contact-form" class="fl-wrap">
+							<div id="message"></div>
+							<div id='success_page' style="display: none;">
+							  <h3>Email Sent Successfully.</h3>
+								<p>Thank you your message has been submitted to us.</p>
+							   </div>
+							   <div id='error_page' style="display: none;">
+								<h3>Error</h3>
+								  <p>We experienced a problem sending your email. Kindly try again later.</p>
+								 </div>
+							<form class="custom-form"  method="POST" name="contactform" id="contactform">
+								<fieldset>
+									<div class="row">
+										<div class="col-sm-6">
+											<input type="text" name="name" id="name" placeholder="Your Name *" value="" />
+										</div>
+										<div class="col-sm-6">
+											<input type="text" name="email" id="email" placeholder="Email Address *" value="" />
+										</div>
+									</div>
+									<div class="question">
+										<textarea name="comments" id="review" cols="40" rows="3"
+											placeholder="Your Review:"></textarea>
+									</div>
+									<button class="btn fl-btn" onclick="submitReview()"><span>Submit Review</span> </button>
+								</fieldset>
+							</form>
+					</div>
+				<!-- Acknowledge receipt of review -->
+				
+
+				<!-- End of Receipt -->
+				</div>
+				<div class="section-number"> <span>0</span>5<strong>.</strong></div>
+			</section>
+			<!--section end-->
+		</div>
+		<!--column-wrap-container end-->
+		<!--scroll-fixed-column-content-->
+		<div class="scroll-fixed-column-content stf-con_mob-hidden fl-wrap">
+			<div class="container">
+				<!--page-scroll-nav-->
+				<div class="page-scroll-nav fl-wrap">
+					<nav class="scroll-init color2-bg">
+						<ul class="no-list-style">
+							<li><a class="scroll-link fbgs actscr-link" href="#sec1"
+									data-bgtex="01. About Us"><span>About</span></a></li>
+							<li><a class="scroll-link fbgs" href="#sec2"
+									data-bgtex="02. Porfolio"><span>Portfolio</span></a></li>
+							<li><a class="scroll-link fbgs" href="#sec3"
+									data-bgtex="03. Services"><span>Services</span></a></li>
+							<li><a class="scroll-link fbgs" href="#sec4" 
+									data-bgtex="04. Our Team"><span>Team</span></a></li>
+							<li><a class="scroll-link fbgs" href="#sec5"
+									data-bgtex="05. Testimonials"><span>Testimonials</span></a></li>
+						</ul>
+					</nav>
+				</div>
+				<!--page-scroll-nav end-->
+			</div>
+			<div class="arrowpagenav"></div>
+		</div>
+		<!--scroll-fixed-column-content end-->
+	</div>
+	<!--column-wrap end-->
+	<div class="limit-box fl-wrap"></div>
+</div>
+<!-- content end  -->
+{%endblock%}

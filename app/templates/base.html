@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	{% if title %}
+	<title>{{ title }}</title>
+	{% else %}
+	<title>Nest Sleepers| Home</title>
+	{% endif %}
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="robots" content="index, follow" />
+	<meta name="keywords" content="Trucks" />
+	<meta name="description" content="" />
+	<!--=============== css  ===============-->
+	<link type="text/css" rel="stylesheet" href="../static/css/plugins.css">
+	<link type="text/css" rel="stylesheet" href="../static/css/color.css">
+	<link type="text/css" rel="stylesheet" href="../static/css/style.css">
+	<!--=============== favicons ===============-->
+	<link rel="shortcut icon" href="../static/images/favicon.ico">
+</head>
+
+
+<body>
+	<!--loader-->
+	<div class="loader-wrap">
+		<div class="spinner">
+			<div class="double-bounce1"></div>
+			<div class="double-bounce2"></div>
+		</div>
+	</div>
+	<!--loader end-->
+	<!-- main start  -->
+	<div id="main">
+		<!-- main-header-->
+		<header class="main-header">
+			<a href="{{ url_for('main.index') }}" class="logo-holder ajax"><img src="../static/images/logo.png"
+					alt=""></a>
+			<!-- nav-button-wrap-->
+			<div class="nav-button but-hol">
+				<span class="nos"></span>
+				<span class="ncs"></span>
+				<span class="nbs"></span>
+				<div class="menu-button-text">Menu</div>
+			</div>
+			<!-- nav-button-wrap end-->
+			<div class="progress-bar-wrap">
+				<div class="progress-bar color-bg"></div>
+			</div>
+			<div class="header_social ">
+				<ul>
+					<li><a href="https://www.facebook.com/nestsleepers/" target="_blank">Fb</a></li>
+					<li><a href="https://www.instagram.com/nestsleepers/" target="_blank">In</a></li>
+				</ul>
+			</div>
+			<!-- share-button -->
+			<div class="folio-btn showshare">
+				<div class="folio-btn-item"></div>
+				<span class="folio-btn-tooltip ">Share</span>
+			</div>
+			<!-- share-button end -->
+		</header>
+		<!-- main-header  end-->
+		<!-- top-header-->
+		<div class="top-header top-header-half">
+			<div class="page-subtitle">
+				<span></span>
+			</div>
+			<a href="{{ url_for('contact.contacts') }}" class="single-page-fixed-row-link ajax"><i
+					class="fal fa-envelope"></i> <span>Get In Touch</span></a>
+		</div>
+		<!-- top-header  end-->
+		<!-- wrapper  -->
+		<div id="wrapper">
+			<!-- content-holder  -->
+			<div class="content-holder" data-pagetitle="Nest Sleepers">
+				<!-- nav-holder-->
+				<div class="nav-holder but-hol">
+					<div class="nav-scroll-bar-wrap fl-wrap">
+						<a href="index.html" class="ajax logo_menu"><img src="../static/images/logo.png" alt=""></a>
+						<div class="nav-container fl-wrap">
+							<!-- nav -->
+							<nav class="nav-inner" id="menu">
+								<ul>
+									<li>
+										<a href="{{ url_for('main.index') }}" class="act-link">Home</a>
+									</li>
+									<li>
+										<a href="{{ url_for('portfolio.view_all_projects') }}">Portfolio</a>
+
+									</li>
+									<li><a href="{{ url_for('contact.contacts') }}" class="ajax">Contacts</a></li>
+								</ul>
+							</nav>
+							<!-- nav end-->
+						</div>
+					</div>
+					<!-- nav-title-->
+					<div class="nav-holder-line"></div>
+					<div class="nav-title"><span>Menu</span></div>
+					<!-- nav-title end-->
+				</div>
+				<div class="nav-holder-dec"></div>
+				<div class="nav-overlay"></div>
+				<!-- nav-holder end -->
+				<div class="scroll-con-sec fl-wrap"></div>
+				{% block content %}
+
+				{% endblock %}
+
+				<!-- footer -->
+				<div class="height-emulator fl-wrap"></div>
+				<footer class="main-footer">
+					<div class="container">
+						<div class="footer-decor">
+							<canvas id="bg-animation"></canvas>
+						</div>
+						<!-- footer-inner -->
+						<div class="footer-inner fl-wrap">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="footer-logo">
+										<img src="images/logo2.png" alt="">
+									</div>
+									<div class="footer_text  footer-box fl-wrap">
+										<p>Our team takes over everything, from an idea and concept development to
+											realization. We believe in traditions and incorporate them within our
+											innovations.Client is the soul of the project.</p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="footer-header fl-wrap"><span>01.</span> Contacts</div>
+									<!-- footer-contacts-->
+									<div class="footer-contacts footer-box fl-wrap">
+										<ul>
+											<li><span>Call:</span><a href="#">+496-545-6747</a></li>
+											<li><span>Write :</span><a href="#">support@nestsleepers.com</a></li>
+											<li><span>Find us : </span><a href="#">Dallas Tx</a></li>
+										</ul>
+									</div>
+									<!-- footer contacts end -->
+									<a href="{{ url_for('contact.contacts') }}" class="ajax fc_button btn float-btn">Get
+										In Touch</a>
+								</div>
+							</div>
+						</div>
+						<!-- footer-inner end -->
+						<!-- subbfooter -->
+						<div class="subbfooter fl-wrap">
+							<div class="policy-box">
+								<span>
+									<p>Nestsleepers &copy; All Rights Reserved</p>
+								</span>
+							</div>
+							<div class="footer-solcial">
+								<ul>
+									<li><a href="https://www.facebook.com/nestsleepers/" target="_blank">Fb</a></li>
+									<li><a href="https://www.instagram.com/nestsleepers/" target="_blank">In</a></li>
+								</ul>
+							</div>
+							<div class="to-top-btn to-top"><i class="fal fa-long-arrow-up"></i></div>
+						</div>
+						<!-- subbfooter end -->
+					</div>
+				</footer>
+				<!-- footer end -->
+			</div>
+			<!-- content-holder end -->
+			<!-- share-wrapper-->
+			<div class="share-wrapper">
+				<div class="close-share-btn"><i class="fal fa-times"></i></div>
+				<div class="share-container fl-wrap  isShare"></div>
+			</div>
+			<!-- share-wrapper  end -->
+		</div>
+		<!-- wrapper end -->
+		<!-- cursor-->
+		<div class="element">
+			<div class="element-item"></div>
+		</div>
+		<!-- cursor end-->
+	</div>
+	<!-- Main end -->
+	<!--=============== scripts  ===============-->
+	<script src="../static/js/jquery.min.js"></script>
+	<script src="../static/js/plugins.js"></script>
+	<script src="../static/js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+{%extends "base.html" %}
+{% block content %}
+<!-- content-->
+<div class="content full-height cfh_nomob">
+    <!-- map-view-wrap -->
+    <div class="map-view-wrap white-bg">
+        <div class="map-view-wrap_item fl-wrap">
+            <div class="contact-details">
+                <h4>Contact Details</h4>
+                <ul>
+                    <li><span>Call:</span><a href="#">+496-545-6747</a></li>
+                    <li><span>Write :</span><a href="#">support@nestsleepers.com</a></li>
+                    <li><span>Find us : </span><a href="#">Dallas Tx</a></li>
+                </ul>
+            </div>
+            <div class="btn float-btn act-cf">Get in Touch</div>
+        </div>
+    </div>
+    <!--map-view-wrap end -->
+    <!--fixed-column-wrap-->
+    <div class="fixed-column-wrap fcw_fw">
+        <!--fixed-column-wrap-content-->
+        <div class="fixed-column-wrap-content">
+            <div class="fixed-column-wrap_bg">
+                <div class="map-container">
+                    <div id="map-single" class="map" data-latlog="[32.779167 , -96.808891]"
+                        data-popuptext="Our Location in Dallas Texas."></div>
+                </div>
+                <div class="hero-scroll-down-notifer  ">
+                    <div class="scroll-down-wrap ">
+                        <div class="mousey">
+                            <div class="scroller"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fixed-column-dec"></div>
+            </div>
+            <div class="fwc-dec fwc-dec_top"></div>
+            <div class="fwc-dec fwc-dec_right"></div>
+            <div class="fixed-column-wrap_dec"></div>
+        </div>
+        <!--fixed-column-wrap-content end-->
+    </div>
+    <!--fixed-column-wrap end-->
+    <div class="limit-box fl-wrap"></div>
+    <!-- contact form wrap -->
+    <div class="contact-form-wrap">
+        <div class="contact-form-overlay"></div>
+        <div class="contact-form-container">
+            <div class="contact-form-content fl-wrap white-bg">
+                <div class="contact-form-header fl-wrap">
+                    <h4>Get In Touch</h4>
+                    <span class="close-cf close-contact-form"><i class="fal fa-times"></i></span>
+                </div>
+                <div id="contact-form" class="fl-wrap">
+                    <div id="message"></div>
+                    <div id='success_page' style="display: none;">
+                      <h3>Email Sent Successfully.</h3>
+                        <p>Thank you your message has been submitted to us.</p>
+                       </div>
+                       <div id='error_page' style="display: none;">
+                        <h3>Error</h3>
+                          <p>We experienced a problem sending your email. Kindly try again later.</p>
+                         </div>
+                    <form class="custom-form"  method="POST" name="contactform" id="contactform">
+                        <fieldset>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input type="text" name="name" id="name" placeholder="Your Name *" value="" />
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" name="email" id="email" placeholder="Email Address *" value="" />
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" name="name" id="phone" placeholder="Your Phone *" value="" />
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="fl-wrap select-holder">
+                                        <select id="subject" name="subject">
+                                            <option value="" disabled selected>Subject</option>
+                                            <option value="Support">Support</option>
+                                            <option value="New Project">New Project</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question">
+                                <textarea name="comments" id="comments" cols="40" rows="3"
+                                    placeholder="Your Message:"></textarea>
+                            </div>
+                            <button class="btn fl-btn" onclick="sendEmail()"><span>Send Message</span> </button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--contact form wrap end -->
+</div>
+<!-- content end  -->
+
+{%endblock%}
