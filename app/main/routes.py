@@ -14,7 +14,7 @@ def index():
         return render_template('index.html', title='Nest Sleepers | Home', reviews=reviews)
     except:
 
-        return render_template('index.html', title='Nest Sleepers | Home', reviews=reviews)
+        return render_template('index.html', title='Nest Sleepers | Home')
 
 @bp.route('/review', methods=['POST'])
 def review():

@@ -10,8 +10,8 @@ sess = Session()
 def create_app(config_class=Config):
     app = Flask(__name__)
     app.config.from_object(config_class)
-    app.config['DEBUG'] = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Lk@0724276722@localhost:5432/nestsleepersdb'
+    app.config['DEBUG'] = False
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Perfect10n!@localhost:5432/nestsleepers'
     db.init_app(app)
 
     # Register Blueprints
