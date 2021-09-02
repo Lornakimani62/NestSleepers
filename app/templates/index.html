@@ -1,6 +1,7 @@
 {%extends "base.html" %}
 {% block content %}
 <!-- hero-wrap  -->
+
 <div class="hero-wrap fl-wrap full-height scroll-con-sec">
 	<!--fs-slider-wrap -->
 	<div class="fs-slider_align_title">
@@ -308,7 +309,7 @@
 							<div class="serv-item">
 								<div class="serv-media">
 									<div class="bg " data-bg="../static/images/bg/bg8.jpeg"></div>
-									<div class="team-info-num">5.0</div>
+									<div class="team-info-num">05.</div>
 								</div>
 								<div class="serv-text">
 									<h4>Cargo Van Customization</h4>
@@ -436,36 +437,34 @@
 					<!-- Success and error message -->
 					<div id='success_page' style="display: none;">
 						<h3>Review Sent Successfully.</h3>
-							<p>Thank you your review has been submitted to us.</p>
+							<p>Thank you. Your review has been submitted to us.</p>
 							</div>
 							<div id='error_page' style="display: none;">
 							<h3>Error</h3>
 							<p>We experienced a problem sending your review. Kindly try again later.</p>
 							</div>
+							<div id='missing_variable' style="display: none;">
+								<h3>Error</h3>
+								  <p>We require your name and review.</p>
+								 </div>
 						<div class="pr-subtitle no-top-mar"> Leave A Review</div>
 						<div class="section-separator fl-wrap sp2"><span></span></div>
 						<div id="contact-form" class="fl-wrap">
 							<div id="message"></div>
-							<div id='success_page' style="display: none;">
-							  <h3>Email Sent Successfully.</h3>
-								<p>Thank you your message has been submitted to us.</p>
-							   </div>
-							   <div id='error_page' style="display: none;">
-								<h3>Error</h3>
-								  <p>We experienced a problem sending your email. Kindly try again later.</p>
-								 </div>
 							<form class="custom-form"  method="POST" name="contactform" id="contactform">
 								<fieldset>
 									<div class="row">
 										<div class="col-sm-12">
-											<input type="text" name="name" id="name" placeholder="Your Name *" value="" />
+											<input type="text" name="name" id="name" placeholder="Your Name *" value="" required />
 										</div>
 									</div>
 									<div class="question">
 										<textarea name="comments" id="review" cols="40" rows="3"
-											placeholder="Your Review:"></textarea>
+											placeholder="Your Review:" required></textarea>
 									</div>
-									<button class="btn fl-btn" onclick="submitReview()"><span>Submit Review</span> </button>
+						<!-- loader -->
+						<div class="loader" id="loader" style="display: none;"></div>
+									<button class="btn fl-btn" type="submit" id="btn fl-btn" onclick="submitReview()"><span>Submit Review</span> </button>
 								</fieldset>
 							</form>
 					</div>
