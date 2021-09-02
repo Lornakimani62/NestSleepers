@@ -19,17 +19,23 @@ def index():
 @bp.route('/review', methods=['POST'])
 def review():
     try:
+        print("Entry")
 
         name = request.form['name']
         review = request.form['review']
-        post = Reviews(name=name,review=review)
-        db.session.add(post)
-        db.session.commit()
+        if not name or not review:
+            print("empty fields")
+            message = "Empty Fields"
+            return jsonify(message)
+        else:
+            post = Reviews(name=name,review=review)
+            db.session.add(post)
+            db.session.commit()
 
-        message = "Completed"
-        return jsonify(message)
+            message = "Completed"
+            return jsonify(message)
 
     except:
-
+        print("Failed")
         message = "Uncompleted"
         return jsonify(message)
