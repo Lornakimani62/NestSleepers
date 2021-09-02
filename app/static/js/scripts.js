@@ -1652,8 +1652,13 @@ $.post('/sendEmail', {
 
 function submitReview(){
     console.log("Entry")
+    button = document.getElementById("btn fl-btn");
+    button.style.display = "none"
+    loader = document.getElementById("loader");
+    loader.style.display = "block"
     fname = document.getElementById("name").value;
     review = document.getElementById("review").value;
+
 $.post('/review', {
     name:fname,
     review:review,
@@ -1661,12 +1666,32 @@ $.post('/review', {
     console.log(response)
     if(response === "Completed"){
     console.log("Complete")
-    message = document.getElementById("success_page")
-    message.style.display = "block"
+    success_message = document.getElementById("success_page")
+    missing_variable_message = document.getElementById("missing_variable")
+    error_message = document.getElementById("error_page")
+    missing_variable_message.style.display = "none"
+    error_message.style.display = "none"
+    success_message.style.display = "block"
+    button.style.display = "block"
+    loader.style.display = "none"
+    }else if(response === "Empty Fields"){
+        success_message = document.getElementById("success_page")
+        missing_variable_message = document.getElementById("missing_variable")
+        error_message = document.getElementById("error_page")
+        success_message.style.display = "none"
+        error_message.style.display = "none"
+        missing_variable_message.style.display = "block"
+        button.style.display = "block"
+        loader.style.display = "none"
     }else{
-        console.log("Uncomplete")
-        message = document.getElementById("error_page") 
-        message.style.display = "block"
+        success_message = document.getElementById("success_page")
+        missing_variable_message = document.getElementById("missing_variable")
+        error_message = document.getElementById("error_page")
+        success_message.style.display = "none"
+        missing_variable_message.style.display = "none"
+        error_message.style.display = "block"
+        button.style.display = "block"
+        loader.style.display = "none"
     }
     });
 }
