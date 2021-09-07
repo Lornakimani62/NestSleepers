@@ -1,4 +1,4 @@
-from flask import render_template, session, flash, redirect, url_for, request,jsonify
+from flask import render_template, session, flash, redirect, url_for, request,jsonify, make_response
 from . import bp
 from models import Reviews
 from models import db
@@ -39,3 +39,12 @@ def review():
         print("Failed")
         message = "Uncompleted"
         return jsonify(message)
+
+@bp.route('/sitemap.xml', methods=['GET'])
+def sitemap():
+
+    template = render_template('sitemap.xml')
+    response = make_response(template)
+    response.headers['Content-Type'] = 'application/xml'
+
+    return response
